@@ -4,7 +4,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -30,10 +30,10 @@ const Hero = () => {
       </div> */}
 
       {/* Content */}
-      <div className="container mx-auto px-4 z-10 text-center">
+      <div className="container mx-auto px-4 z-20 text-center relative">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
           {/* Event Badge */}
-          <div className="inline-block px-4 py-2 neon-border rounded-full bg-background/50 backdrop-blur-sm">
+          <div className="inline-block px-4 py-2 neon-border rounded-full bg-background/50 backdrop-blur-sm relative z-20">
             <span className="text-primary text-glow font-semibold">10-Hour Innovation Sprint</span>
           </div>
 

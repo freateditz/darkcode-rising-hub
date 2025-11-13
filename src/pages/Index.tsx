@@ -6,6 +6,7 @@ import Themes from "@/components/Themes";
 import Prizes from "@/components/Prizes";
 import Schedule from "@/components/Schedule";
 import FAQ from "@/components/FAQ";
+import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
       <Prizes />
       <Schedule />
       <FAQ />
+      <ContactUs />
       <Footer />
     </div>
   );
