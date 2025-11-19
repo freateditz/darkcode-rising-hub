@@ -1,4 +1,5 @@
-import { Brain, Bot, Smartphone, Globe } from "lucide-react";
+import { Description } from "@radix-ui/react-toast";
+import { Brain, Bot, Smartphone, Globe , PiggyBank , GraduationCap ,Lightbulb, HeartPulse } from "lucide-react";
 
 const Themes = () => {
     const themes = [
@@ -30,6 +31,36 @@ const Themes = () => {
                 "Pioneer decentralized solutions that redefine trust and transparency in the digital age.",
             color: "from-orange-500 to-yellow-500",
         },
+        {
+    icon: PiggyBank,
+    title: "FinTech",
+    description:
+        "Build secure and smart financial solutions that simplify payments, banking, investments, and financial access for everyone.",
+    color: "from-blue-500 to-purple-500",
+},
+{
+    icon: GraduationCap,
+    title: "EdTech",
+    description:
+        "Reimagine learning with technology-driven solutions that make education more accessible, engaging, and personalized.",
+    color: "from-indigo-500 to-red-600",
+},
+{
+    icon: HeartPulse,
+    title: "HealthTech",
+    description:
+        "Create digital healthcare innovations that improve diagnosis, patient care, wellness tracking, and medical accessibility.",
+    color: "from-red-500 to-rose-500",
+},
+{
+    icon: Lightbulb,
+    title: "Open Innovation",
+    description:
+        "Build solutions in any domain—powered by creativity, collaboration, and bold ideas without limits.",
+    color: "from-teal-500 to-green-500",
+}
+
+
     ];
 
     return (

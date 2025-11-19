@@ -1,40 +1,8 @@
 import Spline from "@splinetool/react-spline";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
-import { useEffect, useRef } from "react";
 
 const Hero = () => {
-    const devfolioRef = useRef(null);
-
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://apply.devfolio.co/v2/sdk.js';
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-
-        // Handle Devfolio iframe messages
-        const handleMessage = (event: MessageEvent) => {
-            if (event.origin !== 'https://apply.devfolio.co') return;
-            // Devfolio messages are handled internally
-        };
-
-        window.addEventListener('message', handleMessage);
-
-        // Reinitialize Devfolio after script loads
-        script.onload = () => {
-            if ((window as any).Devfolio) {
-                (window as any).Devfolio.init();
-            }
-        };
-
-        return () => {
-            if (document.body.contains(script)) {
-                document.body.removeChild(script);
-            }
-            window.removeEventListener('message', handleMessage);
-        }
-    }, []);
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
             {/* Spline 3D Background */}
@@ -103,12 +71,12 @@ const Hero = () => {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-wrap justify-center gap-4 pt-4">
-                        <div
-                            ref={devfolioRef}
-                            className="apply-button"
-                            data-hackathon-slug="darkcode-rising"
-                            data-button-theme="dark"
-                        ></div>
+                        <Button
+                            size="lg"
+                            className="neon-border text-lg px-8 py-6 hover-glow bg-primary text-primary-foreground hover:bg-primary/90"
+                        >
+                            Apply Now
+                        </Button>
                         <Button
                             size="lg"
                             variant="outline"

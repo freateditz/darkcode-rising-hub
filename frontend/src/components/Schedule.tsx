@@ -2,16 +2,13 @@ import { Clock } from "lucide-react";
 
 const Schedule = () => {
   const scheduleItems = [
-    { time: "8:00 AM", event: "Registration & Check-in", description: "Get your badges and swag" },
-    { time: "9:00 AM", event: "Opening Ceremony", description: "Welcome speech and rules briefing" },
-    { time: "9:30 AM", event: "Hacking Begins", description: "Let the coding commence!" },
-    { time: "12:00 PM", event: "Lunch Break", description: "Fuel up with food and networking" },
-    { time: "3:00 PM", event: "Mid-Event Check-in", description: "Progress updates and mentor sessions" },
-    { time: "6:00 PM", event: "Dinner Break", description: "Evening meal and team bonding" },
-    { time: "7:30 PM", event: "Final Sprint", description: "Last push before submissions" },
-    { time: "9:00 PM", event: "Submissions Close", description: "Finalize and submit your projects" },
-    { time: "9:30 PM", event: "Presentations", description: "Showcase your innovations" },
-    { time: "11:00 PM", event: "Awards Ceremony", description: "Winners announcement and closing" },
+    { time: "8:30 AM", event: "Registration & Check-in", description: "Get your badges and swag" },
+    { time: "10:00 AM", event: "Opening Ceremony", description: "Welcome speech and rules briefing" },
+    { time: "10:30 AM", event: "Hacking Begins", description: "Let the coding commence!" },
+    { time: "1:00 PM", event: "Lunch Break", description: "Fuel up with food and networking" },
+    { time: "3:00 PM", event: "Judging round", description: "Showcase your innovations" },
+    { time: "4:30 PM", event: "Results", description: "Winners announcement" },
+    { time: "5:00 PM", event: "closing Ceremony", description: "Merch distribution" },
   ];
 
   return (

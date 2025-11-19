@@ -114,7 +114,7 @@ const Footer = () => {
                         </div>
                         <div className="mt-6">
                             <a
-                                href="https://discord.gg/darkcode"
+                                href="https://discord.gg/dm8bAhGc"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block px-6 py-2 neon-border rounded-lg text-primary hover-glow transition-all"
